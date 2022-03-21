@@ -16,7 +16,6 @@ function PageTransition(){
     // sections active class
     allSections.addEventListener('click',(e) => {
         const id=e.target.dataset.id;
-        //const mid=e.target.className('main-btn');
  
         if(id){
             // remove selected from the other btns
@@ -24,11 +23,6 @@ function PageTransition(){
             for(let btn of btns){
                 btn.classList.remove('active')
             }
-            /*
-            sectBtns.forEach((btn)=>{
-                btn.classList.remove('active')
-            })
-            */
             e.target.classList.add('active')
 
             // hide other sections
@@ -44,5 +38,3 @@ function PageTransition(){
     )}
 
 PageTransition();
-// https://www.youtube.com/watch?v=xV7S8BhIeBo
-// 1:27:47
