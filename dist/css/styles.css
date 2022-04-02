@@ -608,6 +608,8 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  padding: 1rem;
 }
 
 .portfolios .portfolio-item .hover-items .icons {
@@ -622,11 +624,19 @@ section {
           align-items: center;
 }
 
+.portfolios .portfolio-item .hover-items .icons a i {
+  font-size: 7rem;
+  margin: 0 5px;
+}
+
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 150px;
+  font-size: 4rem;
+  width: 150px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,8 +652,8 @@ section {
   transition: all .4s ease-in-out;
 }
 
-.portfolios .portfolio-item .hover-items .icons .icon i {
-  font-size: 1.5rem;
+.portfolios .portfolio-item .hover-items .icons .icon a i {
+  font-size: 8rem;
   color: var(--color-white);
   margin: 0 1rem;
 }
