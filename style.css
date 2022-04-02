@@ -14,5 +14,6 @@ p{
     font-size: 1.1rem;
     z-index: 4;
     word-wrap: break-word;
-    width: 300px
+    width: 300px;
+    margin:50px
 }
