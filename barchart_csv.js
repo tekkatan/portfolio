@@ -24,7 +24,7 @@ function barchart(){
     var g=svg.append("g").attr("transform","translate("+100+","+100+")");
 
     // Importing data from csv
-    d3.csv("../data/stock_values_carrots.csv").then(function(data){
+    d3.csv("data/stock_values_carrots.csv").then(function(data){
         xScale.domain(data.map(function(d){
             return d.year;
         }))
