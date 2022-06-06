@@ -131,4 +131,4 @@ function bubbleChart(){
     }
 
     // load data
-    d3.csv('../data/sales.csv').then(display);
+    d3.csv('data/sales.csv').then(display);
