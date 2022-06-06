@@ -22,7 +22,7 @@ function donutchart(){
         .attr("class","title")
         .text("Sales per agent in % - May 2023");
 
-    d3.csv("../data/sales.csv").then(function(data){
+    d3.csv("data/sales.csv").then(function(data){
        // the data retrieved from the csv
         var pie=d3.pie()
             .sort(null)
