@@ -424,7 +424,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 60%;
+  width: 75%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
@@ -440,7 +440,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .excel {
-  width: 80%;
+  width: 65%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
