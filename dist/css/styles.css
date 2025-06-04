@@ -223,7 +223,10 @@ section {
   -webkit-clip-path: polygon(20% 0%, 47% 51%, 21% 100%, 0% 100%, 25% 50%, 0% 0%);
           clip-path: polygon(20% 0%, 47% 51%, 21% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
-
+.title-thumbnail{
+  color:#E09E50;
+  margin-left:30%;
+}
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 50%;
