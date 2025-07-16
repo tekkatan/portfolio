@@ -429,7 +429,9 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
   width: 75%;
 }
-
+.about-stats .progress-bars .progress-bar .progress-con .progress .csharp {
+  width: 45%;
+}
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 35%;
 }
