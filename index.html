@@ -12,44 +12,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
-    <header class="section sect1 header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/hero.png" alt="">
+    <header class="content-section" id="hero-section" aria-labelledby="Homepage Hero section">
+            <div class="row" id="hero-row">
+                
+                <div class="column" id="column-hero-img">
+                    <picture class="hero-background">
+                    <source srcset="/img/profielfotoN.webp" type="image/webp">
+                    <img src="/img/profielfotoN.jpg" alt="Color photo of the author, Tanja Bekker">
+                    </picture>
+                </div>
+                <div class="column" id="column-hero-txt">
+                    <heading id="hero-heading">
+                        <h2>Hi, I'm <b>Tanja Bekker</b> a Software developer and tester.</h2>
+                    </heading>
+                    <div class="hero-subheading">This is my portfolio website.</div>
                 </div>
             </div>
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Tanja Bekker</span>
-                    Software Developer
-                </h1>
-                <p>
-                    I love to create beautiful functional 
-                    web- and desktop solutions.
-                </p>
-                
-            </div>
-        </div>
     </header>
     <main>
-        <section class="section sect2 about" id="about">
+        <section class="content-section sect2 about" id="about">
             <div class="main-title">
-                <h2>About <span>me</span> <span class="bg-text">my stats</span></h2>
+                <h2>About <span>me</span></h2>
             </div>
             <div class="about-container">
                 <div class="left-about">
-                    <h4>Information About me</h4>
-                    <p>As a software developer with a background in art and
+
+                    <p>As a software developer and tester with a background in art and
                        data analysis, I love to create things to help others.
                     </p>
-                    <p>My main idea of developing software is to first analyze
+                    <p><b>How would former colleages describe me?</b></br>
+                       Former colleages would describe me as someone with a positive inquisitive
+                       critical view who likes to work structured and punctual; a problem solver.
+                    </br>
+                    </p>
+                       <p><b>What am I looking for?</b></br>
+                       I am looking forward to working for a dynamic organization 
+                       with a public interest.
+                    </p>
+                    <p><b>What did I do to acquire experience and sharpen my skills?</b><br>
+                       My main idea of developing and testing software is to first analyze
                        the questions and requirements and then see which
-                       language matches that need.
-                       Hence my experience in both Java, Python, Javascript and 
-                       Excel.
-                       I'd like to keep it functional yet appealing.
+                       language and techniques matches that need. Hence why I have
+                       acquired experience in both software development as well as
+                       software testing. Next to that I will keep sharpen my
+                       skills by both studying as well as keeping up with the 
+                       latest updates in both the field of software development
+                       as well as software testing.
                     </p>
                 </div>
                 <div class="right-about">
@@ -211,14 +219,34 @@
                         <i class="fas fa-book"></i>
                     </div>
                     <p class="tl-duration">Sept 2020 - present</p>
-                    <h5>Java and C# (learning)<span> - Wij 3.0 ICT</span></h5>
-                    <p> - Learning  more about Java, C# and .Net in depth and develop software on a lower level.</p>
+                    <h5>Java, C# and Full stack certification<span> - Wij 3.0 ICT</span></h5>
+                    <p> - Learning  more about Java, Full stack development, C# and .Net in depth and develop software on a lower level.</p>
                     <p> - Helping others with webdevelopment and software development
                             questions and/or learning
                     </p>
                 </div>
-                
-
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <p class="tl-duration">October 2025 - present</p>
+                    <h5>Full stack Developer<span> - freeCodeCamp</span></h5>
+                    <p> - Responsive Web Design</p>
+                    <p> - Front End Development libraries (ReactJS)</p>
+                    <p> - Python</p>
+                    <p> - Relational Databases</p>
+                    <p> - Back End Development and APIs</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <p class="tl-duration">July 2025 - October 2025</p>
+                    <h5>Foundational C# with Microsoft Developer Certification<span> - freeCodeCamp</span></h5>
+                    <p>Grade: 87.5%</p>
+                    <p> - Console Application Development</p>
+                    <p> - Debugging Applications</p>
+                </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fas fa-user-graduate"></i>
@@ -417,228 +445,404 @@
                 </div>
             </div>
         </section>
-        <section class="section sect4 portfolio" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+        <section class="content-section sect4 portfolio" id="portfolio">
+             <div class="main-title">
+                <h2>Portfolio <span>work</span></h2>
             </div>
             <p class="port-text">
                 Here is some of my work that I've done in various programming languages.
             </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progBudgetApp.png" alt="BudgetApp (Java)">
-                        <p class="title-thumbnail">BudgetApp (Java)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>BudgetApp (Java), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/budgetapp" target="_blank">
+            <div class="row-portfolio">
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progBudgetApp.png" alt="BudgetApp (Java)">
+                            <p class="title-thumbnail">BudgetApp (Java)</p><br>
+                        </div>
+                        <div class="hover-items">
+                            <details>
+                                <summary>
+                                    Info
+                                </summary>
+                                <ul>
+                                    <li>The BudgetApp is a CRUD App made with Java OpenJDK 8 and the Swing library.</li><br>
+                                    <li>This App is made as a moduleassingment of module Designing and Programming
+                                         (Ontwerpen en Programmeren) for my education HBO Software Development.</li><br>
+                                    <li>To prevent any copyright issues, the supermarketnames have been changed to 
+                                        supermarktnaam 01, 02, etc in this online version.</li><br>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Creating and adding articles
+                                </summary>
+                                <ul>
+                                    <li>The User can fill in the fields of:
+                                        Weekbudget, Jaar, Weeknummer. The program will show 
+                                        the corresponding weekdate.
+                                    </li><br>
+                                    <li>The User can choose a Supermarktnaam from a dropdown.
+                                        The User can fill in an Artikelnaam, Prijs per stuk and 
+                                        choose Aantal from a dropdown.
+                                        The program will calculate the Totaalprijs.
+                                    </li><br>
+                                    <li>The User can check checkboxes to fill in if 
+                                        the article has been bought already and if it was a 
+                                        discount or not.
+                                    </li><br>
+                                    <li>If the User presses the button "Add article" the program 
+                                        will check if all field are filled in correctly.
+                                        If there are errors the program will inform the User
+                                        by text but also with a red X at the field where the 
+                                        error occurred. If the field is valid, then a green V 
+                                        will appear at the corresponding field.
+                                    </li><br>
+                                    <li>If all fields are filled in correctly the User is able to
+                                        add the product to the list.
+                                    </li><br>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Deleting articles</summary>
+                                <ul>
+                                    <li>The User can delete articles by first 
+                                        clicking on the row in the grocerylist and then click on the button delete.</li><br>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Exporting grocerylist</summary>
+                                <ul>
+                                    <li>When the User is satisfied with their list he or she 
+                                        can export the list to .txt format.</li><br>
+                                    <li>Per export an overview list of all supermarkets and a detailed list per supermarket 
+                                        will be made. </li><br>
+                                </ul>
+                            </details>
+                            <br>
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
+                            <div class="icons">
+                                <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/budgetapp" target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/softwtestJavaPlaywright.png" alt="Softwaretest (Java) with Playwright">
+                            <p class="title-thumbnail">Softwaretest (Java and Playwright)</p><br>
+                        </div>
+                        <div class="hover-items">
+                            <details>
+                                <summary>Info</summary>
+                                <ul><li>Software test with Java, JUnit and Playwright</li><br>
+                                    <li>The automated Software test application opens
+                                        wikipedia in a new browser and checks if the User would 
+                                        search for the word "wortelsap" he or she would end up
+                                        at the given page or not.</li><br>
+                                </ul>
+                            </details>
+                            <br>
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
+                            <div class="icons">
+                                <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/playwrighttests/src/main/java/playwrightexamples" target="_blank">
+                                <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/softwtestJavaPlaywright.png" alt="Softwaretest (Java) with Playwright">
-                        <p class="title-thumbnail">Softwaretest (Java and Playwright)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Softwaretest (Java) with Playwright, view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/playwrighttests/src/main/java/playwrightexamples" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
+                <div class="column-portfolio">
+                    <div class="content">
                     <div class="image">
                         <img src="img/progLightSwitch.png" alt="LightSwitch - TMAP Softwaretest (State transition), with JavaScript, Playwright and Cucumber">
                         <p class="title-thumbnail">LightSwitch - TMAP Softwaretest (State transition), with JavaScript, Playwright and Cucumber</p>
                     </div>
                     <div class="hover-items">
-                        <h3>LightSwitch - TMAP Softwaretest (State transition), with JavaScript, Playwright and Cucumber, view project source on github</h3>
+                        <details>
+                                <summary>Info</summary>
+                                <ul>
+                                    <li>I've got a lamp in my kitchen which is controlled by a light switch and I was wondering how the technique behind this little 
+                                        device works. I wanted to analyse the state transitions of this lamp and which paths it can take 
+                                        to get to the desired “light brightness”. 
+                                        First off I've made a simple state transition diagram of the lamp.</li><br>
+                                    <li>After the test analysis I've chosen JavaScript, 
+                                        Playwright and Cucumber to make the corresponding acceptance tests.</li><br>
+                                </ul>
+                            </details>
+                        <br>
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
                         <div class="icons">
                             <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/softwaretesting/playwrightcucumber" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
+                    </div>
                 </div>
-                <div class="portfolio-item">
+            </div>
+            <div class="row-portfolio">
+                <div class="column-portfolio">
+                    <div class="content">
                     <div class="image">
                         <img src="img/progGroceryApp.png" alt="Picture of Java Grocery CRUD App with SQL Prepared Statements">
                         <p class="title-thumbnail">Grocery CRUD App (Java 17 and SQL Prepared Statements)</p>
                     </div>
                     <div class="hover-items">
-                        <h3>Grocery CRUD App (Java 17 and SQL Prepared Statements), view project source on github</h3>
+                        <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
                         <div class="icons">
                             <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/groceriescrudapp" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
+                    </div> 
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progRegexIBANAPP.png" alt="Regex IBAN searcher App (Java)">
-                        <p class="title-thumbnail">Regex IBAN searcher App (Java)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Regex IBAN searcher App (Java), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/regexIBAN" target="_blank">
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progRegexIBANAPP.png" alt="Regex IBAN searcher App (Java)">
+                            <p class="title-thumbnail">Regex IBAN searcher App (Java)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
+                            <div class="icons">
+                                <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/regexIBAN" target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
+                </div>      
+                <div class="column-portfolio">
+                    <div class="content">
                     <div class="image">
                         <img src="img/progCsharpCatApp.png" alt="Cat App (Console appilcation in C# and .Net)">
                         <p class="title-thumbnail">Cat App (Console appilcation in C# and .Net)</p>
                     </div>
                     <div class="hover-items">
-                        <h3>Cat App (Console appilcation in C# and .Net), view project source on github</h3>
+                        <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
                         <div class="icons">
                             <a href="https://github.com/tekkatan/portfoliowork/tree/main/csharpprojects" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progCalcLambda.png" alt="Calculation with Lambda App (Java)">
-                        <p class="title-thumbnail">Calculation with Lambda App (Java and JUnit)</p>
                     </div>
-                    <div class="hover-items">
-                        <h3>Calculation with Lambda App (Java), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/calclambda" target="_blank">
+                </div>    
+            </div>
+            <div class="row-portfolio">
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progCalcLambda.png" alt="Calculation with Lambda App (Java)">
+                            <p class="title-thumbnail">Calculation with Lambda App (Java and JUnit)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
+                            <div class="icons">
+                                <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/calclambda" target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
+                <div class="column-portfolio">
+                    <div class="content">
                         <img src="img/progCSVReader.png" alt="CSV Reader for special Latin- and Asian language characters (Java)">
                         <p class="title-thumbnail">CSV Reader for special Latin- and Asian language characters (Java and JUnit)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>CSV Reader for special Latin- and Asian language characters, view project source on github</h3>
+                    
+                        <div class="hover-items">
+                        <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
                         <div class="icons">
                             <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/csvreaders" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
+                <div class="column-portfolio">
+                    <div class="content">
                         <img src="img/progGeoManagerConcurrency.png" alt="Picture of code from GeoManager concurrency app (Java)">
                         <p class="title-thumbnail">GeoManager, MetroManager and TrainManager Javaconcurrency applications (Java)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>GeoManager, MetroManager and TrainManager Java concurrency applications, view project source on github</h3>
+                    
+                        <div class="hover-items">
+                        <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
                         <div class="icons">
                             <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/cyclicbarrierexample" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progBinaryCalc.png" alt="Picture of code from project BinaryCalc (Java and JUnit)">
-                        <p class="title-thumbnail">Binary functions for common mathematical use examples (Java and JUnit)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Binary functions for common mathematical use examples (Java and JUnit), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/binarycalc" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progJSDV.jpg" alt="Image of custom datavisualisation (JavaScript and D3.js)">
-                        <p class="title-thumbnail">Custom datavisualisation (JavaScript and D3.js)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Custom datavisualisation (JavaScript and D3.js)</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/presentdatavizcharts" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="datavisuals.html">
-                                <i class="fa-solid fa-circle-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progJSParticleAni1.png" alt="Picture of Interactive Canvas particle animation (JavaScript)">
-                        <p class="title-thumbnail">Interactive Canvas particle animation with dots and lines (JavaScript)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Interactive Canvas particle animation with dots and lines (JavaScript), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/drawingoncanvas1" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="portfolioworkjs1.html">
-                                <i class="fa-solid fa-circle-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progJSParticleAni2.png" alt="Picture of Interactive Canvas particle animation (JavaScript)">
-                        <p class="title-thumbnail">Interactive Canvas particle animation with tris (JavaScript)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>Interactive Canvas particle animation (JavaScript), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/drawingoncanvas2" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="portfolioworkjs2.html">
-                                <i class="fa-solid fa-circle-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/progCSVPythonApp.png" alt="Picture of Python CSV writer">
-                        <p class="title-thumbnail">CSV Writer (Python)</p>
-                    </div>
-                    <div class="hover-items">
-                        <h3>CSV Writer (Python), view project source on github</h3>
-                        <div class="icons">
-                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/drawingoncanvas2" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
             </div>
+            <div class="row-portfolio">
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progBinaryCalc.png" alt="Picture of code from project BinaryCalc (Java and JUnit)">
+                            <p class="title-thumbnail">Binary functions for common mathematical use examples (Java and JUnit)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                            </p>
+                            <div class="icons">
+                                <a href="https://github.com/tekkatan/portfoliowork/tree/main/javaprojects/binarycalc" target="_blank">
+                                <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progJSDV.jpg" alt="Image of custom datavisualisation (JavaScript and D3.js)">
+                            <p class="title-thumbnail">Custom datavisualisation (JavaScript and D3.js)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below. View a live example by clicking on the play button.
+                            </p>
+                            <div class="icons-optimized">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/presentdatavizcharts" target="_blank">
+                                            <i class="fab fa-github"></i>  View source code
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="datavisuals.html">
+                                            <i class="fa-solid fa-circle-play"></i>  Play live example
+                                        </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progJSParticleAni1.png" alt="Picture of Interactive Canvas particle animation (JavaScript)">
+                            <p class="title-thumbnail">Interactive Canvas particle animation with dots and lines (JavaScript)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                                View a live example by clicking on the play button.
+                            </p>
+                            <div class="icons-optimized">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/drawingoncanvas1" target="_blank">
+                                            <i class="fab fa-github"></i>  View source code
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="portfolioworkjs1.html">
+                                            <i class="fa-solid fa-circle-play"></i>  Play live example
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-portfolio">
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progJSParticleAni2.png" alt="Picture of Interactive Canvas particle animation (JavaScript)">
+                            <p class="title-thumbnail">Interactive Canvas particle animation with tris (JavaScript)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.
+                                View a live example by clicking on the play button.
+                            </p>
+                            <div class="icons-optimized">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/drawingoncanvas2" target="_blank">
+                                            <i class="fab fa-github"></i>  View source code
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="portfolioworkjs2.html">
+                                            <i class="fa-solid fa-circle-play"></i>  Play example
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-portfolio">
+                    <div class="content">
+                        <div class="image">
+                            <img src="img/progCSVPythonApp.png" alt="Picture of Python CSV writer">
+                            <p class="title-thumbnail">CSV Writer (Python)</p>
+                        </div>
+                        <div class="hover-items">
+                            <p>If you would like to know more about this project then view project source on my github
+                                by clicking on the button below.</p>
+                            <div class="icons">
+                                <a href="https://github.com/tekkatan/portfoliowork/tree/main/jsprojects/drawingoncanvas2" target="_blank">
+                                <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+                
         </section>
-        <section class="section sect5 contact" id="contact">
+        <section class="content-section sect5 contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
                     <h2>Contact <span>Me</span><span class="bg-text"></span></h2>
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
-                        <h4>Contact me here</h4>
                         <p>If you have any questions feel free to contact me.
                         </p>
                         <div class="contact-info">
@@ -695,22 +899,22 @@
             </div>
         </section>
     </main>
-    <footer>Copyright Tanja Bekker</footer>
+    
     <div class="controlls">
-        <div class="control control-1 active-btn" data-id="home">
+        <div class="control control-1 active-btn" id="home-btn" data-id="home">
             <i class="fas fa-home"></i>
         </div>
-        <div class="control control-2" data-id="about">
+        <div class="control control-2" id="about-btn" data-id="about">
             <i class="fas fa-user"></i>
         </div>
-        <div class="control control-4" data-id="portfolio">
+        <div class="control control-4" id="portfolio-btn" data-id="portfolio">
             <i class="fas fa-code"></i>
         </div>
-        <div class="control control-5" data-id="contact">
+        <div class="control control-5" id="contact-btn" data-id="contact">
             <i class="fas fa-envelope-open"></i>
         </div>
     </div>
- 
+ <footer>Copyright Tanja Bekker</footer>
     <script src="js/app.js"></script>
 </body>
 </html>
