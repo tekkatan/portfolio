@@ -8,7 +8,6 @@
 
 :root {
   --color-primary:#191d2b;
-  /*--color-secondary:#27AE60;*/
   --color-secondary:#E09E50;
   --color-white:#fff;
   --color-black:#000;
@@ -93,13 +92,6 @@ section {
     margin-left: 100px;
     padding-top: 100px;
 }
-.section-heading{
-    font-weight: bold;
-    display: block;
-    font-size: 2em;
-    width:100%;
-    padding-left: 0px;
-}
 #hero-heading h2>b{
     color: var(--color-secondary);
 }
@@ -115,7 +107,6 @@ section {
 .row{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .row-portfolio{
@@ -181,12 +172,6 @@ summary{
 }
 
 .sect2 {
-  display: none;
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
-}
-
-.sect3 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
@@ -307,7 +292,7 @@ summary{
   position: relative;
 }
 
-.header-content .left-header .h-shape {
+.header-content .left-header{
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   width: 65%;
@@ -363,11 +348,11 @@ summary{
   padding-right: 18rem;
 }
 
-.header-content .right-header .name {
+.header-content .right-header{
   font-size: 3rem;
 }
 
-.header-content .right-header .name span {
+.header-content .right-header span {
   color: var(--color-secondary);
 }
 
@@ -872,72 +857,6 @@ summary{
 }
 
 /*components*/
-.btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.main-btn {
-  border-radius: 30px;
-  color: inherit;
-  font-weight: 600;
-  position: relative;
-  border: 1px solid var(--color-secondary);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.main-btn .btn-text {
-  padding: 0 2rem;
-}
-
-.main-btn .btn-icon {
-  background-color: var(--color-secondary);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  padding: 1rem;
-}
-
-.main-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  z-index: -1;
-}
-
-.main-btn:hover::before {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-secondary);
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
 
 .main-title {
   text-align: center;
@@ -975,7 +894,7 @@ summary{
   .left-header {
     margin-top: -80px;
   }
-  .left-header .h-shape {
+  .left-header {
     display: none;
   }
   .right-header {
@@ -985,7 +904,7 @@ summary{
     width: 90%;
     margin: 0 auto;
   }
-  .right-header .name {
+  .right-header {
     font-size: 2.5rem !important;
     text-align: center;
     padding-top: 3rem;
@@ -1113,7 +1032,6 @@ summary{
 @media screen and (max-width: 1070px) {
   .about-container {
     width: 90%;
-
   }
   .about-container .right-about {
     padding-top: 2.5rem;
@@ -1128,32 +1046,32 @@ summary{
     font-size: 4.5rem;
   }
   #column-hero-img{
-        margin-left: 15%;
-    }
-    .row >.column{
-        padding-left:5px;
-        padding-right:5px;
-        margin-left: 0;
-    }
-    #column-about-txt{
-        padding-right:50px;
-    }
-    #column-work-txt{
-        padding-right:50px;
-    }
-    #column-hero-txt{
-        margin-left:0px;
-        text-align: center;
-        padding-top: 90px;
-        width: 80%;
-    }
-    #column-contact-txt{
-        padding-right:5px;
-        padding-left: 5px;
-    }
-    #hero-row{
-        flex-direction: column;
-    }
+    margin-left: 15%;
+  }
+  .row >.column{
+    padding-left:5px;
+    padding-right:5px;
+    margin-left: 0;
+  }
+  #column-about-txt{
+    padding-right:50px;
+  }
+  #column-work-txt{
+    padding-right:50px;
+  }
+  #column-hero-txt{
+    margin-left:0px;
+    text-align: center;
+    padding-top: 90px;
+    width: 80%;
+  }
+  #column-contact-txt{
+    padding-right:5px;
+    padding-left: 5px;
+  }
+  #hero-row{
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -1166,7 +1084,7 @@ summary{
   .left-header {
     margin-top: -80px;
   }
-  .left-header .h-shape {
+  .left-header {
     display: none;
   }
   .left-header .image {
@@ -1180,7 +1098,7 @@ summary{
     width: 90%;
     margin: 0 auto;
   }
-  .right-header .name {
+  .right-header {
     font-size: 2.4rem !important;
     text-align: center;
     padding-top: 3rem;
@@ -1209,27 +1127,27 @@ summary{
     font-size: 4rem;
   }
   #column-hero-img{
-        margin-left: 0px;
-    }
-    #hero-row{
-        flex-direction: column;
-    }
-    #row-contact{
-        flex-direction: column;
-    }
-    .row >.column{
-        padding-top: 55px;
-        padding-left:5px;
-        padding-right:5px;
-    }
-    #column-hero-txt{
-        margin-left:0px;
-        text-align: center;
-        width: 100%;
-    }
-    #hero-heading{
-        margin-top:-190px;
-    }
+    margin-left: 0px;
+  }
+  #hero-row{
+    flex-direction: column;
+  }
+  #row-contact{
+    flex-direction: column;
+  }
+  .row >.column{
+    padding-top: 55px;
+    padding-left:5px;
+    padding-right:5px;
+  }
+  #column-hero-txt{
+    margin-left:0px;
+    text-align: center;
+    width: 100%;
+  }
+  #hero-heading{
+    margin-top:-190px;
+  }
   #column-hero-img img{
     width: 90%;
     margin-top: -40px;
@@ -1238,57 +1156,57 @@ summary{
 }
 /*tablet*/
 @media screen and (max-width:1023px){
-    .timeline{
-      width: 90%;
-    }
-    .row >.column{
-        padding-left:5px;
-        padding-right:5px;
-        margin-left: 0;
-    }
-    .row-portfolio{
-        margin:0px -18px;
-        padding: 8px;
-        display: flex;
-        flex-direction: column;
-    }
-    #column-hero-txt{
-        margin-left:0px;
-        text-align: center;
-        width: 70%;
-        padding-top: 90px;
-        margin-top: 120px;
-    }
-    #column-hero-img{
-      padding-top: 0;
-    }
-    #column-hero-img img{
-      margin-top: 0;
-    }
-    #column-contact-txt{
-        padding-right:5px;
-        padding-left: 5px;
-    }
-    .column-portfolio{
-      width: 90%;
-    }
-    #hero-heading{
-        margin-top:-110px;
-    }
-    #hero-row{
-        flex-direction: row-reverse;
-    }
-    #aboutskill-section, #work-section {
-        flex-direction: column;
-    }
-    #contact-section{
-        flex-direction: column;
-    }
-    ul li{
-        display: block;
-        float: none;
-    }
-    .nav-mobile{
+  .timeline{
+    width: 90%;
+  }
+  .row >.column{
+    padding-left:5px;
+    padding-right:5px;
+    margin-left: 0;
+  }
+  .row-portfolio{
+    margin:0px -18px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  #column-hero-txt{
+    margin-left:0px;
+    text-align: center;
+    width: 70%;
+    padding-top: 90px;
+    margin-top: 120px;
+  }
+  #column-hero-img{
+    padding-top: 0;
+  }
+  #column-hero-img img{
+    margin-top: 0;
+  }
+  #column-contact-txt{
+    padding-right:5px;
+    padding-left: 5px;
+  }
+  .column-portfolio{
+    width: 90%;
+  }
+  #hero-heading{
+    margin-top:-110px;
+  }
+  #hero-row{
+    flex-direction: row-reverse;
+  }
+  #aboutskill-section, #work-section {
+    flex-direction: column;
+  }
+  #contact-section{
+    flex-direction: column;
+  }
+  ul li{
+    display: block;
+    float: none;
+  }
+  .nav-mobile{
     position: fixed;
     transform: translateY(-100%);
     transition: transform 0.2s;
@@ -1301,34 +1219,32 @@ summary{
     color: white;
     list-style: none;
     padding-top: 4rem;
-    }
-    .nav-mobile a{
-        color:#fff;
-        padding: 1rem 1.5rem;
-        display: block;
-    }
+  }
+  .nav-mobile a{
+    color:#fff;
+    padding: 1rem 1.5rem;
+    display: block;
+  }
 
-    .showMenu{
-        transform: translateY(0);
-    }
-    #closeIcon{
-        display: none;
-    }
-    .hamburger{
-        display: inline;
-        position: fixed;
-        z-index: 100;
-        top: 1rem;
-        right: 1rem;
-        padding: 4px;
-        border: #ba5344 solid 2px;
-        cursor: pointer;
-        background: transparent;
-        color: #ba5344;
-        margin-right:5%;
-    }
-
-    
+  .showMenu{
+    transform: translateY(0);
+  }
+  #closeIcon{
+    display: none;
+  }
+  .hamburger{
+    display: inline;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: #ba5344 solid 2px;
+    cursor: pointer;
+    background: transparent;
+    color: #ba5344;
+    margin-right:5%;
+  }   
 }
 
 /*smartphone */
@@ -1337,48 +1253,48 @@ summary{
   .sect4{
     padding-bottom: 200px;
   }
-    #column-hero-img{
-        margin-left: 0px;
-        padding-top:90px;
-    }
-    #column-hero-img img{
-      margin-top: 0;
-    }
-    .column-portfolio{
-      width: 100%;
-    }
-    #hero-row{
-        flex-direction: column;
-    }
-    #row-contact{
-        flex-direction: column;
-    }
-    .row >.column{
-        padding-top: 45px;
-        padding-left:5px;
-        padding-right:5px;
-    }
-    #column-hero-txt{
-        margin-left:0px;
-        text-align: center;
-        width: 100%;
-        margin-top: -25px;
-    }
-    #hero-heading{
-        margin-top:-110px;
-    }
-    .row-portfolio{
-        margin:0px -18px;
-        padding: 8px;
-        display: flex;
-        flex-direction: column;
-    }
-    #jsdatviz-source a{
-      background-color: #E09E50;
-    }
-    #jsdatviz-play{
-      background-color: #ba5344;
-    }
+  #column-hero-img{
+    margin-left: 0px;
+    padding-top:90px;
+  }
+  #column-hero-img img{
+    margin-top: 0;
+  }
+  .column-portfolio{
+    width: 100%;
+  }
+  #hero-row{
+    flex-direction: column;
+  }
+  #row-contact{
+    flex-direction: column;
+  }
+  .row >.column{
+    padding-top: 45px;
+    padding-left:5px;
+    padding-right:5px;
+  }
+  #column-hero-txt{
+    margin-left:0px;
+    text-align: center;
+    width: 100%;
+    margin-top: -25px;
+  }
+  #hero-heading{
+    margin-top:-110px;
+  }
+  .row-portfolio{
+    margin:0px -18px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  #jsdatviz-source a{
+    background-color: #E09E50;
+  }
+  #jsdatviz-play{
+    background-color: #ba5344;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
